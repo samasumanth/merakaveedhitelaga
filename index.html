@@ -3,95 +3,183 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Merakaveedhitelaga - Chandragiri Fort & Heritage</title>
-
-    
-    <!-- Primary SEO Meta Tags -->
-    <meta name="description" content="Explore the rich history of the Merakaveedhitelaga community, tracing back to the Vijayanagara Empire. Learn about traditions, culture, and the significance of this Telugu heritage.">
-    <meta name="keywords" content="Merakaveedhitelaga, Chandragiri Fort, Vijayanagara Empire, Kapu community, Rajahmundry history, warrior families, Telugu heritage, Indian culture, Andhra Pradesh history, warrior clans, South Indian dynasties">
-    <meta name="author" content="Merakaveedhitelaga Editorial Team">
-    <meta name="robots" content="index, follow">
-    
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://merakaveedhitelaga.org/">
-
-
-    <!-- Google Site Verification -->
-    <meta name="google-site-verification" content="your-verification-code">
-
-    <!-- Open Graph Meta Tags (For Facebook and LinkedIn) -->
-    <meta property="og:title" content="Merakaveedhitelaga - Chandragiri Fort & Heritage">
-    <meta property="og:description" content="Explore the legacy of the Merakaveedhitelaga warrior clan, deeply rooted in the Vijayanagara Empire.">
-    <meta property="og:url" content="https://merakaveedhitelaga.org/">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://your-image-url.com/image.jpg">
-
-    <!-- Twitter Card Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Merakaveedhitelaga - Chandragiri Fort & Heritage">
-    <meta name="twitter:description" content="Discover the fascinating history and cultural significance of the Merakaveedhitelaga community.">
-    <meta name="twitter:image" content="https://your-image-url.com/image.jpg">
-
-    <!-- Schema.org Structured Data (Boosts SEO) -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "Merakaveedhitelaga",
-        "url": "https://merakaveedhitelaga.org/",
-        "logo": "https://your-image-url.com/logo.png",
-        "description": "A historical and cultural website dedicated to the Merakaveedhitelaga community, tracing its roots from the Vijayanagara Empire to present times.",
-        "sameAs": [
-            "https://www.facebook.com/yourpage",
-            "https://www.instagram.com/yourpage",
-            "https://www.twitter.com/yourpage"
-        ],
-        "contactPoint": {
-            "@type": "ContactPoint",
-            "telephone": "+91-XXXXXXXXXX",
-            "contactType": "customer service"
-        }
-    }
-    </script>
-
-    <!-- Fast Redirect (Waits 5 Seconds Before Redirecting) -->
-    <script>
-        setTimeout(function() {
-            window.location.href = "https://vidyabhimanisamajam.org/";
-        }, 5000); // 5-second delay before redirecting
-    </script>
-
+    <title>Merakaveedhitelaga.org</title>
     <style>
         body {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            text-align: center;
-            font-family: Arial, sans-serif;
-            background-color: #fff;
             margin: 0;
+            font-family: Arial, sans-serif;
         }
-        .loader {
-            border: 6px solid #f3f3f3;
-            border-top: 6px solid #3498db;
-            border-radius: 50%;
-            width: 50px;
-            height: 50px;
-            animation: spin 1s linear infinite;
-            margin-top: 20px;
+        .header {
+            background-color: rgba(237, 146, 14, 1); /* Custom Saffron color */
+            color: black;
+            padding: 60px 20px; /* Increased header height */
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+            flex-direction: column;
         }
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
+        .login-container {
+            position: absolute;
+            right: 12%;
+            top: 15px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: bold;
+        }
+        .login-container img {
+            width: 24px;
+            height: 24px;
+        }
+        .header-content {
+            display: flex;
+            width: 100%;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 20px;
+            position: relative;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 45px; /* Decreased title size */
+            position: absolute;
+            left: 3%; /* Adjusted more to the left */
+            font-weight: bold;
+        }
+        .menu {
+            display: flex;
+            gap: 30px;
+            position: absolute;
+            right: 5%; /* Adjusted to fit inside header */
+            top: 50%; /* Centered inside header */
+            transform: translateY(-50%);
+        }
+        .menu a {
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .content {
+            padding: 40px;
+            text-align: center;
+            font-size: 20px;
+            background-image: url('https://static.wixstatic.com/media/d85993_c9e5d7d74eef438683ffb07c410c5add~mv2.jpg/v1/fill/w_1147,h_558,al_c,q_85,enc_avif,quality_auto/d85993_c9e5d7d74eef438683ffb07c410c5add~mv2.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            flex-direction: column;
+        }
+        .heading {
+            margin-top: 40px;
+            font-size: 50px; /* Increased heading size */
+            font-weight: bold;
+            color: black;
+            text-align: center;
+            position: relative;
+        }
+        .heading::before {
+            content: "";
+            display: block;
+            width: 100px;
+            height: 5px;
+            background-color: rgba(237, 146, 14, 1); /* Same color as header */
+            margin: 0 auto 10px;
+        }
+        .content-text {
+            padding: 20px;
+            font-size: 18px;
+            text-align: justify;
+            max-width: 900px;
+            margin: auto;
+        }
+        .content-text p strong {
+            display: block;
+            font-size: 30px; /* Increased heading size */
+            font-weight: bold;
+            margin-top: 30px;
+            position: relative;
+        }
+        .content-text p strong::before {
+            content: "";
+            display: block;
+            width: 100px;
+            height: 5px;
+            background-color: rgba(237, 146, 14, 1); /* Same color as header */
+            margin-bottom: 10px;
+        }
+        .footer {
+            background-color: rgba(237, 146, 14, 1); /* Custom Saffron color */
+            color: black;
+            text-align: center;
+            padding: 20px;
+            position: relative;
         }
     </style>
+    <script>
+        document.addEventListener("click", function() {
+            window.location.href = "https://www.vidyabhimanisamajam.org/";
+        });
+    </script>
 </head>
 <body>
-    <h1>Welcome to Merakaveedhitelaga</h1>
-    <p>We are redirecting you to our new website...</p>
-    <p>If you are not redirected, <a href="https://vidyabhimanisamajam.org/">click here</a>.</p>
-    <div class="loader"></div>
+    <header class="header">
+        <div class="login-container">
+            <img src="https://cdn-icons-png.flaticon.com/512/747/747376.png" alt="Login Icon">
+            <span>Log In</span>
+        </div>
+        <div class="header-content">
+            <h1>Merakaveedhitelaga.org</h1>
+            <nav class="menu">
+                <a href="#">Home</a>
+                <a href="#">Traditions & Customs</a>
+                <a href="#">Prominent People</a>
+                <a href="#">VIDYABHIMANI SAMAJAM</a>
+                <a href="#">Blog</a>
+            </nav>
+        </div>
+    </header>
+    
+    <main class="content"></main>
+    
+    <div class="heading">Chandragiri Fort</div>
+    
+    <div class="content-text">
+        <p><strong>Foreword</strong></p>
+        <p>It is our immense pleasure and privilege to host this website on Merakaveedhitelaga community and Merakaveedhi Chandragiri Telaga Vidyabhimani Samajam, which is a unique sect among Kapu communities, having more than 300 years of history, culture, heritage, and legacy.</p>
+        <p>Though the need for this website was felt for a long time, unfortunately, the same could not be realized owing to many factors, and we are happy to bring our dream project to reality now.</p>
+        <p>Had this been done some three decades ago, we would have had the fortune of having our community elders who could authenticate our work and bring in the untold history and culture of this great community to light.</p>
+        <p>The purpose of this website is to carry on our legacy, culture, and heritage to the future generations of our community, who may not be fortunate enough to know their own history and culture, which they should be proud of.</p>
+        <p>There may be many some missing aspects and shortcomings in our efforts, but this is only the beginning, and we assure you that, with your help and cooperation, we will continue to improvise.</p>
+        <p>We thank Vogeti Rishi and our other friends who have helped us with this small compilation.</p>
+        <p>We hope everyone will show interest in this work and help us improve and overcome any shortcomings if any.</p>
+        <p>Thanking you,<br>Editorial Committee</p>
+    </div>
+
+
+    <div class="content-text">
+        <p><strong>Merakaveedhi telaga</strong></p>
+        <p>Merakaveedhi Telagas are a sect of royal families who use to live in Merakaveedhi Rajahmundry,  They have migrated From  Chandragiri  to Rajahmundry in the period of 1757. </p>
+        <p>Originally these Families were  from  Chandragiri and served as the military Generals  (Senathipathis)</p>
+        <p>These warrior families  helped the French in Anglo-French wars, and later served in the British armies holding highest Indian military posts. They worship Venugopala swamy as their family deity. Even today the  idols of Sri Venugopalaswamy temple( Uhtsava Vigrahahalu) will be taken in procession through the Merakaveedhi streets.</p>
+        <p> These families follow  different customs, which are unique for them, they are a close knit clan who are related to each other and live like a single elongated community. Even today one can find families with surnames and gotra in and around Chandragiri this is the ample evidence that these families have migrated from chandragiri.</p>
+    </div>
+
+
+    <div class="content-text">
+        <p><strong>Origin:</strong></p>
+        <p>These Meraka Veedhi Telagas are descendants of the Dandanayakas and Ministers of the Vijayanagara Empire. This fact is evident from the reference of these family names in various chapters of the Vijayanagara History. There are references regarding the participation of the Dandanayakas in the second Tallikota war. The Tallikota war resulted in the defeat of Aliya Ramarayalu in the hands of Behamani Sultans, which resulted in the fall of the mighty Vijayanagara Empire. After the fall of the Vijayanagara Empire, the Dandanayakas of this clan migrated to Chandragiri (Presently in Chittoor Dist., A.P), Penukonda (Presently in Anantapur Dist., A.P) and Vellore (Presently in Tamil Nadu) and took up various military positions . Later they consolidated themselves to support Sriranga Rayalu, a descendant of Vijayanagara dynasty, to gain  the throne of Chandragiri in 1639 AD. These families from then lived in and around Chandragiri for at least a century and Even today.</p>
+        <p>Oral history passed on in their  families also traces their arrival in Rajahmundry during the last nawab rule, which also translates to about 270 years as on today.( i.e. around 1757 )</p>
+    </div>
+    
+    <footer class="footer">
+        <p>RAJAHMUNDRY, EAST GODAVARI, ANDHRA PRADESH, INDIA  | info@merakaveedhitelaga.org  |  Phone: +91 9347706644</p>
+        <p>&copy; 2025 Merakaveedhitelaga | All Rights Reserved Powered by S11solutions</p>
+    </footer>
 </body>
 </html>
